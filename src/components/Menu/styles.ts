@@ -4,6 +4,7 @@ import { color } from "../../styles/colors";
 
 export const Nav = styled.nav`
     text-align: center;
+    background-color: #fff;
 
     @media (max-width: ${screen.mobile}) {
         position: fixed;
@@ -11,6 +12,7 @@ export const Nav = styled.nav`
         bottom: 0;
         width: 100%;
         border-top: 1px solid ${color.lightLine};
+        z-index: 10;
     }
 `
 
