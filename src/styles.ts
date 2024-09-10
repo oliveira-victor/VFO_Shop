@@ -15,10 +15,24 @@ const GlobalStyle = createGlobalStyle`
         font-family: "Poppins", system-ui;
     }
 
-    .mainContainer {
-        max-width: 1440px;
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .wrapper {
+        max-width: 1920x;
         width: 100%;
         margin: 0 auto;
+    }
+
+    .container {
+        max-width: 1440px;
+        width: 100%;
     }
 `
 
