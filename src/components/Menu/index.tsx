@@ -24,6 +24,18 @@ const Menu = () => {
                 <li>✦</li>
                 <li>
                     <a href="#">
+                        Cartões
+                    </a>
+                </li>
+                <li>✦</li>
+                <li>
+                    <a href="#">
+                        Quadros MDF
+                    </a>
+                </li>
+                <li>✦</li>
+                <li>
+                    <a href="https://vfostudio.vercel.app/links-pt.html" target='_blank'>
                         VFO links
                     </a>
                 </li>

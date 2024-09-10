@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import { color } from './colors'
 
 const GlobalStyle = createGlobalStyle`
     * {
@@ -18,10 +19,11 @@ const GlobalStyle = createGlobalStyle`
     a {
         color: #000;
         text-decoration: none;
+        transition: all .3s ease;
     }
 
     a:hover {
-        text-decoration: underline;
+        color: ${color.active};
     }
 
     .wrapper {
