@@ -1,6 +1,15 @@
 import styled from "styled-components";
 import { color } from "../../styles/colors";
 
+export const CardImg = styled.div`
+    width: 300px;
+    height: 300px;
+    border-radius: 10px 10px 0 0;
+    background-size: 300px;
+    background-position: center;
+    transition: all .3s ease;
+`
+
 export const Card = styled.li`
     max-width: 300px;
     width: 100%;
@@ -9,17 +18,22 @@ export const Card = styled.li`
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     position: relative;
     background-color: #fff;
-    transition: all .3s ease;
-
-    img {
-        width: 100%;
-        height: 300px;
-        object-fit: cover;
-        border-radius: 10px 10px 0 0;
-    }
 
     &:hover {
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    h2 {
+        color: #999;
+        transition: all .3s ease;
+    }
+
+    &:hover h2 {
+        color: #000;
+    }
+
+    &:hover ${CardImg} {
+        background-size: 320px;
     }
 `
 
@@ -29,10 +43,10 @@ export const CardTag = styled.span`
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-20px, 20px);
+    transform: translateY(20px);
     color: #fff;
-    padding: 4px 8px;
-    border-radius: 4px;
+    padding: 4px 8px 4px 18px;
+    border-radius: 24px 4px 4px 4px;
 `
 
 export const CardTitle = styled.div`

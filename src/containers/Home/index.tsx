@@ -2,44 +2,42 @@ import ItemCard from "../../components/ItemCard"
 
 import * as S from './styles'
 
+import product1 from '../../assets/product1.webp'
+
 const Home = () => {
 
     const items = [
         {
             id: 1,
             title: 'Chaveiros',
-            img: 'https://vfostudio.vercel.app/dist/images/pf01.jpg',
-            alt: 'descricao',
+            img: product1,
             url: '#',
             tag: true,
-            tagTxt: 'Promoção'
+            tagTxt: 'Novo!'
         },
         {
             id: 2,
-            title: 'Prints A4',
+            title: 'Prints',
             img: 'https://vfostudio.vercel.app/dist/images/pf01.jpg',
-            alt: 'descricao',
             url: '#',
-            tag: true,
-            tagTxt: 'Novo'
+            tag: false,
+            tagTxt: ''
         },
         {
             id: 3,
             title: 'Cartões',
             img: 'https://vfostudio.vercel.app/dist/images/pf01.jpg',
-            alt: 'descricao',
             url: '#',
-            tag: true,
-            tagTxt: 'Promoção'
+            tag: false,
+            tagTxt: ''
         },
         {
             id: 4,
             title: 'Quadros MDF',
             img: 'https://vfostudio.vercel.app/dist/images/pf01.jpg',
-            alt: 'descricao',
             url: '#',
-            tag: true,
-            tagTxt: 'Novo'
+            tag: false,
+            tagTxt: ''
         }
     ]
 
@@ -51,7 +49,6 @@ const Home = () => {
                         key={item.id}
                         title={item.title}
                         img={item.img}
-                        alt={item.alt}
                         url={item.url}
                         tag={item.tag}
                         tagTxt={item.tagTxt}
