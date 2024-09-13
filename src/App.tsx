@@ -1,10 +1,10 @@
+import { BrowserRouter } from 'react-router-dom'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Menu from './components/Menu'
 import Footer from './containers/Footer'
-import Home from './containers/Home'
 import GlobalStyle from './styles'
-
+import Pages from './routes'
 
 function App() {
 
@@ -12,14 +12,16 @@ function App() {
     <>
       <GlobalStyle />
       <div className="wrapper">
-        <Header />
-        <Menu />
-        <Hero />
-        <main className='container'>
-          <Home />
-        </main>
+        <BrowserRouter>
+          <Header />
+          <Menu />
+          {/* <Hero /> */}
+          <main>
+            <Pages />
+          </main>
+        </BrowserRouter>
         <Footer />
-      </div>
+      </div >
     </>
   )
 }

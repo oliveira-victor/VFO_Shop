@@ -3,6 +3,7 @@ import ItemCard from "../../components/ItemCard"
 import * as S from './styles'
 
 import product1 from '../../assets/product1.webp'
+import Hero from "../../components/Hero"
 
 const Home = () => {
 
@@ -11,7 +12,7 @@ const Home = () => {
             id: 1,
             title: 'Chaveiros',
             img: product1,
-            url: '#',
+            link: '/chaveiros',
             tag: true,
             tagTxt: 'Novo!'
         },
@@ -19,7 +20,7 @@ const Home = () => {
             id: 2,
             title: 'Prints',
             img: 'https://vfostudio.vercel.app/dist/images/pf01.jpg',
-            url: '#',
+            link: '#',
             tag: false,
             tagTxt: ''
         },
@@ -27,7 +28,7 @@ const Home = () => {
             id: 3,
             title: 'Cartões',
             img: 'https://vfostudio.vercel.app/dist/images/pf01.jpg',
-            url: '#',
+            link: '#',
             tag: false,
             tagTxt: ''
         },
@@ -35,27 +36,30 @@ const Home = () => {
             id: 4,
             title: 'Quadros MDF',
             img: 'https://vfostudio.vercel.app/dist/images/pf01.jpg',
-            url: '#',
+            link: '#',
             tag: false,
             tagTxt: ''
         }
     ]
 
     return (
-        <S.Home>
-            <S.ItemsList>
-                {items.map((item) => (
-                    <ItemCard 
-                        key={item.id}
-                        title={item.title}
-                        img={item.img}
-                        url={item.url}
-                        tag={item.tag}
-                        tagTxt={item.tagTxt}
-                    />
-                ))}
-            </S.ItemsList>
-        </S.Home>
+        <>
+            <Hero />
+            <main className="container">
+                <S.ItemsList>
+                    {items.map((item) => (
+                        <ItemCard
+                            key={item.id}
+                            title={item.title}
+                            img={item.img}
+                            link={item.link}
+                            tag={item.tag}
+                            tagTxt={item.tagTxt}
+                        />
+                    ))}
+                </S.ItemsList>
+            </main>
+        </>
     )
 }
 

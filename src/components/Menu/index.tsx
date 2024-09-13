@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import * as S from './styles'
 
 const Menu = () => {
@@ -5,15 +6,15 @@ const Menu = () => {
         <S.Nav>
             <S.MenuList>
                 <li>
-                    <a href="#">
+                    <Link to='/'>
                         Início
-                    </a>
+                    </Link>
                 </li>
                 <li>✦</li>
                 <li>
-                    <a href="#">
+                    <Link to='/chaveiros'>
                         Chaveiros
-                    </a>
+                    </Link>
                 </li>
                 <li>✦</li>
                 <li>
