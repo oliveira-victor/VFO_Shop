@@ -2,10 +2,19 @@ import styled from "styled-components";
 import { color } from "../../styles/colors";
 
 export const Footer = styled.footer`
-    width: fit-content;
-    padding: 20px 200px;
+    max-width: 900px;
+    width: 90%;
+    padding: 20px 0;
     margin-bottom: 20px;
     background-color: ${color.footer};
     text-align: center;
     border-radius: 10px;
+
+    @media (max-width: 767px) {
+        margin-bottom: 60px;
+    }
+
+    .author {
+        white-space: nowrap;
+    }
 `
