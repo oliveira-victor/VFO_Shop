@@ -1,11 +1,13 @@
 import * as S from './styles'
 
-import heroImg from '../../assets/hero.webp'
+type Props = {
+    bgimage: string
+}
 
-const Hero = () => {
+const Hero = ({ bgimage }: Props) => {
     return (
         
-        <S.Hero style={{backgroundImage: `url(${heroImg})`}}>
+        <S.Hero style={{backgroundImage: `url(${bgimage})`}}>
         </S.Hero>
     )
 }

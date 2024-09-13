@@ -11,5 +11,6 @@ export const Hero = styled.div`
     @media (max-width: ${screen.mobile}) {
         height: 300px;
         background-image: url(${heroMobile});
+        background-size: cover;
     }
 `

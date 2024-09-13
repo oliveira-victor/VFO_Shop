@@ -1,9 +1,10 @@
 import ItemCard from "../../components/ItemCard"
+import Hero from "../../components/Hero"
 
 import * as S from './styles'
 
+import heroImg from '../../assets/hero.webp'
 import product1 from '../../assets/product1.webp'
-import Hero from "../../components/Hero"
 
 const Home = () => {
 
@@ -44,8 +45,8 @@ const Home = () => {
 
     return (
         <>
-            <Hero />
-            <main className="container">
+            <Hero bgimage={heroImg} />
+            <div className="container">
                 <S.ItemsList>
                     {items.map((item) => (
                         <ItemCard
@@ -58,7 +59,7 @@ const Home = () => {
                         />
                     ))}
                 </S.ItemsList>
-            </main>
+            </div>
         </>
     )
 }
