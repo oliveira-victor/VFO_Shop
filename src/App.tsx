@@ -4,6 +4,7 @@ import Menu from './components/Menu'
 import Footer from './containers/Footer'
 import GlobalStyle from './styles'
 import Pages from './routes'
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <GlobalStyle />
       <div className="wrapper">
         <BrowserRouter>
+        <ScrollToTop />
           <Header />
           <Menu />
           <main>

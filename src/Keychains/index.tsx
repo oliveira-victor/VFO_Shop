@@ -4,26 +4,31 @@ import Hero from "../components/Hero"
 
 import * as S from './styles'
 
+import heroKeys from '../assets/hero-keys.webp'
+import key01 from '../assets/key01.jpg'
+
 const Keychains = () => {
 
     const [displayImage, setDisplayImage] = useState('https://placehold.it/1080x1080')
 
     const keychainsData = [
-        'https://placehold.it/1080x1080',
-        'https://placehold.it/100x100',
-        'https://placehold.it/80x80',
-        'https://placehold.it/1080x1080',
-        'https://placehold.it/100x100',
-        'https://placehold.it/80x80',
-        'https://placehold.it/1080x1080',
-        'https://placehold.it/100x100',
-        'https://placehold.it/80x80',
-        'https://placehold.it/1080x1080'
+        { thumb: key01, full: 'https://vfostudio.vercel.app/dist/images/portfolio/a03+.jpg' },
+        { thumb: key01, full: 'https://placehold.it/80x80' },
+        { thumb: key01, full: 'https://placehold.it/1080x1080' },
+        { thumb: key01, full: 'https://placehold.it/100x100' },
+        { thumb: key01, full: 'https://placehold.it/80x80' },
+        { thumb: key01, full: 'https://placehold.it/1080x1080' },
+        { thumb: key01, full: 'https://placehold.it/100x100' },
+        { thumb: key01, full: 'https://placehold.it/80x80' },
+        { thumb: key01, full: 'https://placehold.it/1080x1080' },
+        { thumb: key01, full: 'https://placehold.it/100x100' },
+        { thumb: key01, full: 'https://placehold.it/1080x1080' },
+        { thumb: key01, full: 'https://placehold.it/100x100' }
     ]
 
     return (
         <>
-            <Hero bgimage='https://placehold.it/1080x1080' />
+            <Hero bgimage={heroKeys} />
             <S.KeysContainer className="container">
                 <S.MainImage>
                     <img className="display-img" src={displayImage} alt="" />
@@ -31,7 +36,7 @@ const Keychains = () => {
                 <S.KeysList>
                     {keychainsData.map((img) => (
                         <li>
-                            <img onMouseEnter={() => setDisplayImage(img)} src={img} alt="" />
+                            <img onMouseEnter={() => setDisplayImage(img.full)} src={img.thumb} alt="" />
                         </li>
                     ))}
                 </S.KeysList>
