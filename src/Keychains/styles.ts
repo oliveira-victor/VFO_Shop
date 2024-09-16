@@ -7,7 +7,9 @@ export const KeysContainer = styled.div`
     grid-template-columns: 680px auto ;
 
     @media (max-width: 1030px) {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 `
 
