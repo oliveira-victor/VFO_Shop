@@ -70,12 +70,12 @@ const Keychains = () => {
             <Hero bgimage={heroKeys} />
             <S.KeysContainer className="container">
                 <S.MainImage>
-                    <img className="display-img" src={displayImage} alt="Miniatura do chaveiro" />
+                    <img className="display-img" src={displayImage} alt="Mockup do chaveiro" />
                 </S.MainImage>
                 <S.KeysList>
                     {keychainsData.map((img, index) => (
                         <li key={index}>
-                            <img onMouseEnter={() => setDisplayImage(img.full)} src={img.thumb} alt="" />
+                            <img onMouseEnter={() => setDisplayImage(img.full)} src={img.thumb} alt="Miniatura do chaveiro" />
                         </li>
                     ))}
                 </S.KeysList>
