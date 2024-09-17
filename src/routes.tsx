@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom"
 
 import Home from "./containers/Home"
-import Keychains from "./Keychains"
+import Keychains from "./containers/Keychains"
 import Prints from "./containers/Prints"
 import Cards from "./containers/Cards"
 import Boards from "./containers/Boards"
