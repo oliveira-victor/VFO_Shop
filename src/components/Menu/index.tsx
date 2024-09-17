@@ -18,15 +18,15 @@ const Menu = () => {
                 </li>
                 <li>✦</li>
                 <li>
-                    <a href="#">
+                    <Link to='/prints'>
                         Prints
-                    </a>
+                    </Link>
                 </li>
                 <li>✦</li>
                 <li>
-                    <a href="#">
+                    <Link to='/cartoes'>
                         Cartões
-                    </a>
+                    </Link>
                 </li>
                 <li>✦</li>
                 <li>

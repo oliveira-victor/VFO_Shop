@@ -5,6 +5,8 @@ import * as S from './styles'
 
 import heroImg from '../../assets/hero.webp'
 import product1 from '../../assets/product1.webp'
+import product2 from '../../assets/product2.webp'
+import product3 from '../../assets/product3.webp'
 
 const Home = () => {
 
@@ -20,16 +22,16 @@ const Home = () => {
         {
             id: 2,
             title: 'Prints',
-            img: 'https://vfostudio.vercel.app/dist/images/pf01.jpg',
-            link: '#',
+            img: product2,
+            link: '/prints',
             tag: false,
             tagTxt: ''
         },
         {
             id: 3,
             title: 'Cartões',
-            img: 'https://vfostudio.vercel.app/dist/images/pf01.jpg',
-            link: '#',
+            img: product3,
+            link: '/cartoes',
             tag: false,
             tagTxt: ''
         },
