@@ -7,6 +7,7 @@ import heroImg from '../../assets/hero.webp'
 import product1 from '../../assets/product1.webp'
 import product2 from '../../assets/product2.webp'
 import product3 from '../../assets/product3.webp'
+import product4 from '../../assets/product4.webp'
 
 const Home = () => {
 
@@ -21,7 +22,7 @@ const Home = () => {
         },
         {
             id: 2,
-            title: 'Prints',
+            title: 'Prints A4/A3',
             img: product2,
             link: '/prints',
             tag: false,
@@ -38,8 +39,8 @@ const Home = () => {
         {
             id: 4,
             title: 'Quadros MDF',
-            img: 'https://vfostudio.vercel.app/dist/images/pf01.jpg',
-            link: '#',
+            img: product4,
+            link: '/quadros',
             tag: false,
             tagTxt: ''
         }

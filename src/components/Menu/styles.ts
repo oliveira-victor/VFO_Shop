@@ -27,6 +27,17 @@ export const MenuList = styled.ul`
 
     li {
         white-space: nowrap;
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+                .external-link {
+                height: 18px;
+                margin-left: 8px;
+            }
+        }
     }
 
     @media (max-width: ${screen.mobile}) {

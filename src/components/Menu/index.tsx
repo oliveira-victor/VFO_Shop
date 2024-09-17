@@ -1,5 +1,8 @@
 import { Link } from 'react-router-dom'
+
 import * as S from './styles'
+
+import externalLink from '../../assets/external-link.svg'
 
 const Menu = () => {
     return (
@@ -30,14 +33,15 @@ const Menu = () => {
                 </li>
                 <li>✦</li>
                 <li>
-                    <a href="#">
+                    <Link to='/quadros'>
                         Quadros MDF
-                    </a>
+                    </Link>
                 </li>
                 <li>✦</li>
                 <li>
                     <a href="https://vfostudio.vercel.app/links-pt.html" target='_blank'>
                         VFO links
+                        <img className='external-link' src={externalLink} alt="External link icon" />
                     </a>
                 </li>
             </S.MenuList>
