@@ -1,8 +1,5 @@
-import { useState } from "react"
-
 import Hero from "../components/Hero"
-
-import * as S from './styles'
+import Gallery from "../components/Gallery"
 
 import heroKeys from '../assets/hero-keys.webp'
 import key01a from '../assets/key01a.webp'
@@ -40,11 +37,9 @@ import fullkey10 from '../assets/fullkey10.webp';
 import fullkey11 from '../assets/fullkey11.webp';
 import fullkey12 from '../assets/fullkey12.webp';
 
-
-
 const Keychains = () => {
 
-    const [displayImage, setDisplayImage] = useState(fullkey00)
+    const displayImage = fullkey00
 
     const keychainsData = [
         { thumb: key01a, full: fullkey01a },
@@ -68,18 +63,10 @@ const Keychains = () => {
     return (
         <>
             <Hero bgimage={heroKeys} />
-            <S.KeysContainer className="container">
-                <S.MainImage>
-                    <img className="display-img" src={displayImage} alt="Mockup do chaveiro" />
-                </S.MainImage>
-                <S.KeysList>
-                    {keychainsData.map((img, index) => (
-                        <li key={index}>
-                            <img onMouseEnter={() => setDisplayImage(img.full)} src={img.thumb} alt="Miniatura do chaveiro" />
-                        </li>
-                    ))}
-                </S.KeysList>
-            </S.KeysContainer>
+            <Gallery 
+                displayImage={displayImage}
+                thumbs={keychainsData}
+            />
         </>
     )
 }

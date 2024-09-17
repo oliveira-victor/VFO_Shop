@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { color } from "../styles/colors";
+import { color } from "../../styles/colors";
 
-export const KeysContainer = styled.div`
+export const GalleryContainer = styled.div`
     gap: 20px;
     display: grid;
     grid-template-columns: 680px auto ;
@@ -25,7 +25,7 @@ export const MainImage = styled.div`
     }
 `
 
-export const KeysList = styled.ul`
+export const ThumbList = styled.ul`
     max-height: 510px;
     overflow-y: auto;
     display: flex;
