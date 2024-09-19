@@ -1,6 +1,7 @@
 import { SectionTitle } from "../../styles"
 import Hero from "../../components/Hero"
 import Gallery from "../../components/Gallery"
+import ItemDescription from "../../components/ItemDescription"
 
 import heroPrints from '../../assets/hero-prints.webp'
 import fullprint00 from '../../assets/fullprint00.webp'
@@ -32,6 +33,13 @@ const Prints = () => {
         { thumb: thumb06, full: fullprint06 }
     ]
 
+    const printsInfo = [
+        'Prints disponíveis no rtamanho A3 e A4',
+        'Papel couche fosco 250g',
+        'Impressão de alta qualidade com cores vibrantes',
+        'Produtos exclusivos com artes do VFO Studio'
+    ]
+
     return (
         <>
             <Hero bgimage={heroPrints} />
@@ -40,6 +48,7 @@ const Prints = () => {
                 displayImage={displayImage}
                 thumbs={printsData}
             />
+            <ItemDescription info={printsInfo} />
         </>
     )
 }

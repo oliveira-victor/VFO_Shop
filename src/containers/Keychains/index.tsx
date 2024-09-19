@@ -1,6 +1,7 @@
 import { SectionTitle } from "../../styles"
 import Hero from "../../components/Hero"
 import Gallery from "../../components/Gallery"
+import ItemDescription from "../../components/ItemDescription"
 
 import heroKeys from '../../assets/hero-keys.webp'
 import key01a from '../../assets/thumb-alice-a.webp'
@@ -61,6 +62,14 @@ const Keychains = () => {
         { thumb: key12, full: fullkey12 }
     ]
 
+    const keychainsInfo = [
+        'Chaveiros em acrílico',
+        'Imagens na frente e verso (podendo serem iguais ou não)',
+        'Impressão com cores vivas em papel fotográfico matte',
+        'Conta com aplicação de verniz com proteção UV, para maior proteção e durabilidade',
+        'Produtos exclusivos com artes do VFO Studio'
+    ]
+
     return (
         <>
             <Hero bgimage={heroKeys} />
@@ -69,6 +78,7 @@ const Keychains = () => {
                 displayImage={displayImage}
                 thumbs={keychainsData}
             />
+            <ItemDescription info={keychainsInfo} />
         </>
     )
 }

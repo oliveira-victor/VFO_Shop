@@ -1,6 +1,7 @@
 import { SectionTitle } from "../../styles"
 import Hero from "../../components/Hero"
 import Gallery from "../../components/Gallery"
+import ItemDescription from "../../components/ItemDescription"
 
 import heroCard from '../../assets/hero-card.webp'
 import fullcard00 from '../../assets/fullcard00.webp'
@@ -35,6 +36,12 @@ const Cards = () => {
         { thumb: thumb07, full: fullprint07 }
     ]
 
+    const cardsInfo = [
+        'Cartões no formato 10x15cm',
+        'Impressão de alta qualidade em papel cartão 300g matte',
+        'Produtos exclusivos com artes do VFO Studio'
+    ]
+
     return (
         <>
             <Hero bgimage={heroCard} />
@@ -43,6 +50,7 @@ const Cards = () => {
                 displayImage={displayImage}
                 thumbs={printsData}
             />
+            <ItemDescription info={cardsInfo} />
         </>
     )
 }
