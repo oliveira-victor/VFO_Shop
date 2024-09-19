@@ -1,3 +1,4 @@
+import { SectionTitle } from "../../styles"
 import Hero from "../../components/Hero"
 import Gallery from "../../components/Gallery"
 
@@ -37,6 +38,7 @@ const Cards = () => {
     return (
         <>
             <Hero bgimage={heroCard} />
+            <SectionTitle><span className="mobileHide">✦</span> Cartões</SectionTitle>
             <Gallery
                 displayImage={displayImage}
                 thumbs={printsData}

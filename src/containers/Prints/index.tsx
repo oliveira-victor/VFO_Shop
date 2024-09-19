@@ -1,3 +1,4 @@
+import { SectionTitle } from "../../styles"
 import Hero from "../../components/Hero"
 import Gallery from "../../components/Gallery"
 
@@ -34,6 +35,7 @@ const Prints = () => {
     return (
         <>
             <Hero bgimage={heroPrints} />
+            <SectionTitle><span className="mobileHide">✦</span> Prints A4/A3</SectionTitle>
             <Gallery
                 displayImage={displayImage}
                 thumbs={printsData}

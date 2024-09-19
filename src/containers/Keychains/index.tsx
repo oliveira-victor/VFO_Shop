@@ -1,3 +1,4 @@
+import { SectionTitle } from "../../styles"
 import Hero from "../../components/Hero"
 import Gallery from "../../components/Gallery"
 
@@ -63,6 +64,7 @@ const Keychains = () => {
     return (
         <>
             <Hero bgimage={heroKeys} />
+            <SectionTitle><span className="mobileHide">✦</span> Chaveiros</SectionTitle>
             <Gallery 
                 displayImage={displayImage}
                 thumbs={keychainsData}
