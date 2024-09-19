@@ -16,6 +16,7 @@ const Footer = () => {
                     <img src={instagram} alt="Instagram icon" />
                 </a>
             </S.FooterIcons>
+            <p className='email'>vfostudio@gmail.com</p>
         </S.Footer>
     )
 }

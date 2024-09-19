@@ -43,7 +43,7 @@ const Cards = () => {
     ]
 
     return (
-        <>
+        <section>
             <Hero bgimage={heroCard} />
             <SectionTitle><span className="mobileHide">✦</span> Cartões</SectionTitle>
             <Gallery
@@ -51,7 +51,7 @@ const Cards = () => {
                 thumbs={printsData}
             />
             <ItemDescription info={cardsInfo} />
-        </>
+        </section>
     )
 }
 

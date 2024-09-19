@@ -41,7 +41,7 @@ const Prints = () => {
     ]
 
     return (
-        <>
+        <section>
             <Hero bgimage={heroPrints} />
             <SectionTitle><span className="mobileHide">✦</span> Prints A4/A3</SectionTitle>
             <Gallery
@@ -49,7 +49,7 @@ const Prints = () => {
                 thumbs={printsData}
             />
             <ItemDescription info={printsInfo} />
-        </>
+        </section>
     )
 }
 

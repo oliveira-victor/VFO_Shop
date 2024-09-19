@@ -5,6 +5,7 @@ import Footer from './containers/Footer'
 import GlobalStyle from './styles'
 import Pages from './routes'
 import ScrollToTop from './components/ScrollToTop'
+import About from './containers/About'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
           <main>
             <Pages />
           </main>
+          <About />
         </BrowserRouter>
         <Footer />
       </div >

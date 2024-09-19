@@ -18,6 +18,11 @@ export const Footer = styled.footer`
     .author {
         white-space: nowrap;
     }
+
+    .email {
+        font-size: 14px;
+        margin-top: 20px;
+    }
 `
 
 export const FooterIcons = styled.div`

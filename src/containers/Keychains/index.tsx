@@ -71,7 +71,7 @@ const Keychains = () => {
     ]
 
     return (
-        <>
+        <section>
             <Hero bgimage={heroKeys} />
             <SectionTitle><span className="mobileHide">✦</span> Chaveiros</SectionTitle>
             <Gallery 
@@ -79,7 +79,7 @@ const Keychains = () => {
                 thumbs={keychainsData}
             />
             <ItemDescription info={keychainsInfo} />
-        </>
+        </section>
     )
 }
 
