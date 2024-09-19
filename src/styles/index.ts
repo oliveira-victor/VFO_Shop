@@ -2,6 +2,8 @@ import styled, { createGlobalStyle } from 'styled-components'
 import { color } from './colors'
 import { screen } from './screens'
 
+import bgpattern from '../assets/waves.webp'
+
 const GlobalStyle = createGlobalStyle`
     * {
         margin: 0;
@@ -11,6 +13,9 @@ const GlobalStyle = createGlobalStyle`
 
     body {
         font-family: "Quicksand", sans-serif;
+        background-image: url(${bgpattern});
+        background-size: 120px;
+        
     }
 
     h1, h2, h3, h4 {
@@ -41,6 +46,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     .mobileHide {
+        color: ${color.active};
 
         @media (max-width: ${screen.mobile}) {
             display: none;
@@ -51,7 +57,7 @@ const GlobalStyle = createGlobalStyle`
 export const SectionTitle = styled.h2`
     font-size: 62px;
     font-weight: lighter;
-    border-bottom: 1px solid ${color.lightLine};
+    border-bottom: 1px solid ${color.active};
     text-transform: uppercase;
     max-width: 1440px;
     width: 100%;
