@@ -40,6 +40,10 @@ export const MenuList = styled.ul`
         }
     }
 
+    .highlight {
+        font-weight: bold;
+    }
+
     @media (max-width: ${screen.mobile}) {
         justify-content: left;
     }

@@ -16,6 +16,10 @@ export const AboutDescription = styled.div`
         line-height: 1.4;
     }
 
+    .strongLink {
+        font-weight: bold;
+    }
+
     img {
         max-width: 500px;
         width: 100%;
