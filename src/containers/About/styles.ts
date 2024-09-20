@@ -9,7 +9,7 @@ export const AboutDescription = styled.div`
     gap: 20px;
     justify-content: space-between;
     font-size: 20px;
-    padding: 0 10px;
+    padding: 0 20px;
 
     p {
         margin-bottom: 30px;

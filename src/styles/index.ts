@@ -56,7 +56,7 @@ const GlobalStyle = createGlobalStyle`
 
 export const SectionTitle = styled.h2`
     font-size: 62px;
-    font-weight: lighter;
+    font-weight: 200;
     border-bottom: 1px solid ${color.active};
     text-transform: uppercase;
     max-width: 1440px;
