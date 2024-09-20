@@ -78,4 +78,9 @@ export const Form = styled.form`
         font-size: 20px;
         text-transform: uppercase;
     }
+
+    p {
+        text-align: center;
+        margin-top: 10px;
+    }
 `
