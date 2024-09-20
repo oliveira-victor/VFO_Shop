@@ -49,6 +49,10 @@ export const Form = styled.form`
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
     }
 
+    input:focus {
+        outline: 3px solid ${color.active};
+    }
+
     textarea {
         height: 160px;
         border: none;
@@ -56,6 +60,11 @@ export const Form = styled.form`
         padding: 10px 16px;
         font-size: 16px;
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+        resize: none;
+    }
+
+    textarea:focus {
+        outline: 3px solid ${color.active};
     }
 
     button {
