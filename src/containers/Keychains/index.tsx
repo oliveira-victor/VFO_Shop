@@ -20,6 +20,7 @@ import key09 from '../../assets/thumb-harp.webp'
 import key10 from '../../assets/thumb-flyingwhale.webp'
 import key11 from '../../assets/thumb-magictree.webp'
 import key12 from '../../assets/thumb-umbrellagirl.webp'
+import key13 from '../../assets/thumb-dog.webp'
 
 import fullkey00 from '../../assets/fullkey00.webp';
 import fullkey01a from '../../assets/fullkey01a.webp';
@@ -38,6 +39,7 @@ import fullkey09 from '../../assets/fullkey09.webp';
 import fullkey10 from '../../assets/fullkey10.webp';
 import fullkey11 from '../../assets/fullkey11.webp';
 import fullkey12 from '../../assets/fullkey12.webp';
+import fullkey13 from '../../assets/fullkey13.webp';
 
 const Keychains = () => {
 
@@ -59,7 +61,8 @@ const Keychains = () => {
         { thumb: key09, full: fullkey09 },
         { thumb: key10, full: fullkey10 },
         { thumb: key11, full: fullkey11 },
-        { thumb: key12, full: fullkey12 }
+        { thumb: key12, full: fullkey12 },
+        { thumb: key13, full: fullkey13 }
     ]
 
     const keychainsInfo = [
